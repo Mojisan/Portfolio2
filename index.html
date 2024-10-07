@@ -3,34 +3,59 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../styles/style.css" />
-    <link rel="stylesheet" href="../styles/home.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/home.css" />
     <title>Portfolio</title>
   </head>
   <body>
-    <header>
-      <div class="logo">
-        <h1 id="logo">JIRAMET</h1>
-      </div>
+    <section class="navbar-container">
       <div class="navbar">
         <ul class="navbar-ul">
           <li class="navbar-li">
-            <button id="home-btn">Home</button>
+            <button id="home-btn"><a href="./index.html">Home</a></button>
           </li>
           <li class="navbar-li">
-            <button id="about-me-btn">About Me</button>
+            <button id="about-me-btn">
+              <a href="./pages/about-me.html">About Me</a>
+            </button>
           </li>
           <li class="navbar-li">
-            <button id="project-btn">Project</button>
-          </li>
-          <li class="navbar-li">
-            <button id="gallery-btn">Gallery</button>
-          </li>
-          <li class="navbar-li">
-            <button id="contact-btn">Contact</button>
+            <button id="project-btn">
+              <a href="./pages/project.html">Project</a>
+            </button>
           </li>
         </ul>
       </div>
-    </header>
+    </section>
+
+    <section class="home-container">
+      <div class="home-content">
+        <div class="home-head">
+          <h1>Portfolio</h1>
+        </div>
+
+        <div class="home-body">
+          <h6>HELLO</h6>
+          <h1>I'm Jiramet</h1>
+          <p>A Man</p>
+          <button id="home-btn">ABOUT ME</button>
+        </div>
+
+        <div class="home-foot">
+          <button><i class="bi bi-facebook"></i></button>
+          <button><i class="bi bi-github"></i></button>
+          <button><i class="bi bi-youtube"></i></button>
+          <button><i class="bi bi-discord"></i></button>
+        </div>
+      </div>
+
+      <div class="home-img-content"></div>
+    </section>
+
+    <section></section>
   </body>
 </html>
