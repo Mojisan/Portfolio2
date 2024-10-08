@@ -22,6 +22,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   color: #f3f3f3;
+  z-index: 1000;
 }
 
 .home-img-content {
@@ -31,6 +32,10 @@
   background-position: center;
   width: 100%;
   height: 100%;
+  transition: all 0.3s ease-in-out;
+}
+.home-img-content:hover {
+  transform: scale(1.05);
 }
 
 .home-body {
