@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: pink;
+    padding: 10%;
+}
+
+div {
+    background-color: aqua;
+}
+
+button {
+    padding: 16px;
+    background-color: beige;
+}
+
+button:hover {
+    background-color: black;
+    color: #fff;
+}

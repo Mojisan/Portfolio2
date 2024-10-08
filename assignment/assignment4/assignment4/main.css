@@ -1,0 +1,125 @@
+.grid-container {
+	display: grid;
+	grid-template-columns: 20% auto 10%;
+    grid-gap: 10px;
+}
+
+.grid-container > div{
+    border: 2px solid #000;
+	padding: 20px;
+	font-size: 20px;
+}
+
+#header{
+	grid-column: 1 / span 3;
+	padding: 10%;
+	background-image: url("pic/pizza-dip-9.jpeg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+h1 {
+	background-color: #000;
+	color: #fff;
+	padding: 10px;
+}
+
+#main1{
+	grid-column: 1 / span 1;
+}
+
+#main2{
+	grid-column: 2 / span 1;
+}
+
+#right{
+	grid-column: 3 / span 1;
+	padding: 0;
+}
+
+#footer{
+	grid-column: 1 / span 3;
+	padding: 2%;
+}
+
+#img1-div {
+	margin: 0 auto;
+	width: 100%;
+}
+
+img {
+	width: 100%;
+}
+
+.gallary {
+	border-bottom: 3px solid #000;
+}
+
+.gallary-1 > IMG {
+	width: 75%;
+}
+
+.gallary-1 {
+	display: flex;
+	justify-content: center;
+}
+
+.grid-gallary {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-template-rows: auto auto;
+}
+
+#img8 {
+	display: none;
+}
+
+@media only screen and (max-width: 768px) {
+	.grid-container {
+		display: grid;
+		grid-template-columns: 20% auto;
+		grid-gap: 10px;
+	}
+
+	#header{
+		grid-column: 1 / span 2;
+	}
+
+	#right{
+		grid-column: 1 / span 2;
+		display: grid;
+		grid-template-columns: auto auto auto;
+		grid-template-columns: auto auto auto auto;
+
+	}
+	#footer{
+		grid-column: 1 / span 2;
+	}
+
+	.gallary > img {
+		width: 100%;
+	}
+
+	#img8 {
+		display: block;
+	}
+
+	.grid-container > div {
+		font-size: 16px;
+	}
+
+}
+
+@media only screen and (max-width: 480px) {
+	.grid-container {
+		display: flex;
+		flex-direction: column;
+	}
+	#header{
+		
+	}
+	#footer{
+	
+	}
+}

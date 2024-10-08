@@ -1,9 +1,6 @@
-.right {
-  margin-right: 80px;
-}
-
+.right,
 .left {
-  margin-left: 80px;
+  margin-right: 80px;
 }
 
 .abm-container {
@@ -11,23 +8,34 @@
   box-sizing: border-box;
   justify-content: space-between;
   align-items: center;
-  border: 2px solid #000;
   width: 100%;
   height: 500px;
 }
 
+.sec1 {
+  background-color: rgb(79, 14, 139);
+  color: #f3f3f3;
+}
+
+.sec2 {
+  background-image: url(../pic/bg2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.sec3 {
+  background-color: rgb(164, 148, 179);
+  color: #f3f3f3;
+}
 .title {
   font-size: 32px;
 }
 
 .description {
-  font-size: 24px;
-  line-height: 48px;
+  font-size: 16px;
+  line-height: 28px;
   padding: 32px;
-}
-
-.abm-content {
-  padding: 16px;
 }
 
 .abm-pic-content {
@@ -37,21 +45,216 @@
   align-items: center;
 }
 
-.abm-pic {
-  max-width: 100%;
+.abm-content {
+  padding: 0 20%;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.pic1 {
+  background-image: url(../pic/pic2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   height: 500px;
+  width: 500px;
+}
+.pic2 {
+  background-image: url(../pic/pic3.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  width: 500px;
+  margin-left: 64px;
+}
+
+.skill-logo {
+  height: 40px;
+  width: 40px;
+}
+
+.abm-skill-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-left: 10%;
+}
+
+.abm-skill-container {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.skill {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  font-size: 16px;
+}
+
+.skill > div {
+  width: 300px;
+}
+
+.skill-bar {
+  height: 5px;
+  border-radius: 999px;
+}
+.html {
+  width: 80%;
+  background-color: orangered;
+}
+.css {
+  width: 60%;
+  background-color: blue;
+}
+.js {
+  width: 40%;
+  background-color: rgb(255, 217, 0);
+}
+.figma {
+  width: 80%;
+  background-color: green;
+}
+.unity {
+  width: 50%;
+  background-color: gray;
+}
+
+.react {
+  width: 40%;
+  background-color: lightblue;
+}
+.nextjs {
+  width: 65%;
+  background-color: rgb(53, 51, 51);
+}
+.mui {
+  width: 70%;
+  background-color: darkblue;
+}
+.csharp {
+  width: 65%;
+  background-color: blueviolet;
+}
+.maya {
+  width: 50%;
+  background-color: cyan;
+}
+
+.nextjs-logo {
+  width: 50px;
+}
+
+.unity-logo {
+  height: 35px;
+}
+
+.abm-skill-bar-container {
+  display: flex;
+  flex-direction: row;
+}
+
+footer {
+  padding: 16px;
+  background-color: rgb(56, 56, 56);
+  color: #f3f3f3;
+}
+
+footer > div {
+  display: flex;
+  flex-direction: column;
 }
 @media screen and (max-width: 1280px) {
-  .right {
-    margin-right: 20px;
+  .right,
+  .left {
+    margin-right: 60px;
+  }
+
+  .description {
+    padding: 16px;
+  }
+
+  .abm-content {
+    padding: 0 10%;
   }
 }
 
 @media screen and (max-width: 992px) {
-  .right {
+  .right,
+  .left {
     margin-right: 0;
+  }
+
+  .abm-content {
+    padding: 0 5%;
+  }
+
+  .pic2 {
+    margin-left: 0px;
+  }
+
+  .abm-skill-content {
+    padding-left: 0;
+  }
+
+  .abm-skill-container > h1 {
+    margin-right: 16px;
+  }
+
+  .skill > div {
+    width: 200px;
   }
 }
 
 @media screen and (max-width: 768px) {
+  .description {
+    padding: 8px;
+  }
+
+  .abm-container {
+    height: 300px;
+  }
+
+  .pic1 {
+    height: 300px;
+    width: 300px;
+  }
+
+  .pic2 {
+    height: 300px;
+    width: 300px;
+  }
+
+  .abm-skill-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .abm-skill-container {
+    padding-top: 16px;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .description {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .skill > div {
+    width: 150px;
+  }
 }

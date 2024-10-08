@@ -1,0 +1,134 @@
+header {
+  text-align: center;
+  background-image: url(../pic/bg.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+header h1 {
+  padding: 32px 0;
+  font-size: 45px;
+  color: #f3f3f3;
+}
+
+#bar {
+  margin: 16px 0;
+}
+
+#bar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+#bar li {
+  transition: all 0.3s ease-in-out;
+  color: rgb(90, 5, 107);
+}
+
+#bar li:hover {
+  transform: scale(1.05);
+  font-weight: 900;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100vw;
+  gap: 32px;
+  padding: 32px;
+  background-image: url(../pic/bg2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.card-pj {
+  width: 60%;
+  max-width: 800px;
+  height: auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.card-pj2 {
+  width: 40%;
+  max-width: 300px;
+  height: auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.card-pj:hover {
+  transform: scale(1.05);
+}
+
+.card-pj2:hover {
+  transform: scale(1.05);
+}
+
+.hidden {
+  display: none;
+}
+
+.img-pj1 {
+  background-image: url(../pic/pj1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+}
+
+.img-pj2 {
+  background-image: url(../pic/pj2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+}
+
+.img-pj3 {
+  background-image: url(../pic/pj3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+}
+
+.img-pj4 {
+  background-image: url(../pic/pj4.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+}
+.img-w1 {
+  background-image: url(../pic/w1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+}
+.img-w2 {
+  background-image: url(../pic/w2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+}
